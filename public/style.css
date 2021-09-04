@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+:root {
+  --dark-green: #292D32;
+  --semi-dark-green: #37474F;
+  --green: #4E6663;
+  --gray: #6B8081;
+  --blue: #A9DFD8;
+  --light-blue: #DCF2EF;
+  --white: #FFFFFF;
+  --light-gray: #EBEBEB;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292D32;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container h1 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 134px;
+  text-align: center;
+}
+
+.container p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #EBEBEB;
+}
+
+.form input {
+  background: #6B8081;
+  width: 423px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.form button {
+  height: 50px;
+}
