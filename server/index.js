@@ -4,7 +4,7 @@ let ytdl = require("ytdl-core");
 let app = express();
 
 app.use(express.json());
-app.use(express.static("../public"));
+app.use(express.static("../docs"));
 
 app.get("/videoInfo", async (req, res) => {
     let videoURL = req.query.videoURL;
