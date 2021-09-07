@@ -1,0 +1,33 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "build": "npx webpack --config ./server/webpack/webpack.config.js",
+    "dev": "npx nodemon server/index.js",
+    "deploy": "ibmcloud fn action update my-action dist/bundle.js --kind nodejs:10",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "bundle-js": "^1.0.3",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.12",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "timers-browserify": "^2.0.12",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}

@@ -22,3 +22,7 @@ app.get("/download", ({ query }, res) => {
 });
 
 app.listen(5000);
+
+function main(params) {
+    return {teste: params}
+}
