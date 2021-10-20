@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "41538774-b945-400a-accf-411e4ff5fade",
+		"name": "Converstethic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cloud: videoInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"videoURL\": \"https://www.youtube.com/watch?v=By_JYrhx-WY&ab_channel=CrunchyrollCollection\" \n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-south.functions.appdomain.cloud/api/v1/web/maiconsouzapa%40gmail.com_dev/default/Converstethic.json?videoURL=https://www.youtube.com/watch?v=By_JYrhx-WY%26ab_channel=CrunchyrollCollection",
+					"protocol": "https",
+					"host": [
+						"us-south",
+						"functions",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"v1",
+						"web",
+						"maiconsouzapa%40gmail.com_dev",
+						"default",
+						"Converstethic.json"
+					],
+					"query": [
+						{
+							"key": "videoURL",
+							"value": "https://www.youtube.com/watch?v=By_JYrhx-WY%26ab_channel=CrunchyrollCollection"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cloud: download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "local: videoInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "local: download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
