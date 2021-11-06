@@ -1,5 +1,6 @@
 let express = require("express");
 let ytdl = require("ytdl-core");
+require('dotenv').config();
 
 let app = express();
 
@@ -21,4 +22,4 @@ app.get("/download", ({ query }, res) => {
     }).pipe(res);
 });
 
-app.listen(5000);
+app.listen(process.env.PORT, () => console.log(`Rodando na porta: ${process.env.PORT}`));
