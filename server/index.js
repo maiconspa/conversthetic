@@ -4,7 +4,7 @@ require('dotenv').config();
 
 let app = express();
 
-app.use(cors());
+app.use(cors()); 
 app.use(express.json());
 app.use(express.static("../docs"));
 
