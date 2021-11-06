@@ -4,9 +4,9 @@ document.querySelector("#download-btn").addEventListener("click", async function
     if (video.length == 0) return;
 
     try {
-        document.querySelector(".loader").classList.add("show");
+        // document.querySelector(".loader").classList.add("show");
 
-        let res = await fetch("/videoInfo?videoURL=" + video);
+        let res = await fetch("https://conversthetic.mybluemix.net/videoInfo?videoURL=" + video);
         let data = await res.json();
 
         document.querySelector(".loader").classList.add("show");
@@ -17,9 +17,9 @@ document.querySelector("#download-btn").addEventListener("click", async function
 
         notify(`"${filename}" will be downloaded automatically.`);
 
-        document.getElementById("download-frame").src = `/download?videoURL=${video}&itag=${itag}&filename=${filename}`;
+        document.getElementById("download-frame").src = `https://conversthetic.mybluemix.net/download?videoURL=${video}&itag=${itag}&filename=${filename}`;
     } catch (error) {
-        document.querySelector(".loader").classList.remove("show");
+        // document.querySelector(".loader").classList.remove("show");
         alert("Something went wrong. Please try again.");
         console.error(error)
     }
