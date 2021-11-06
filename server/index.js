@@ -1,5 +1,6 @@
 let express = require("express");
 let ytdl = require("ytdl-core");
+let cors = require('cors');
 require('dotenv').config();
 
 let app = express();
