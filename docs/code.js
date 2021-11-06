@@ -9,7 +9,7 @@ document.querySelector("#download-btn").addEventListener("click", async function
         let res = await fetch("https://conversthetic.mybluemix.net/videoInfo?videoURL=" + video);
         let data = await res.json();
 
-        document.querySelector(".loader").classList.add("show");
+        // document.querySelector(".loader").classList.add("show");
 
         let audios = data.formats.filter((obj) => obj.mimeType.includes("audio/webm"));
         let filename = data.videoDetails.title.replace(/\s{1,}/, "-") + ".MP3"
