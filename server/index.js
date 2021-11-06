@@ -22,4 +22,4 @@ app.get("/download", ({ query }, res) => {
     }).pipe(res);
 });
 
-app.listen(process.env.PORT, () => console.log(`Rodando na porta: ${process.env.PORT}`));
+app.listen(process.env.PORTA, () => console.log(`Rodando na porta: ${process.env.PORTA}`));
